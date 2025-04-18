@@ -1,0 +1,143 @@
+/*
+  stil.css
+  Denna CSS-fil innehåller alla stilmallar för webbsidan "Webbutveckling 1 - Mina lärdomar".
+  Vi börjar med grunderna: kroppens bakgrund, textfärger och typsnitt.
+*/
+/* === NAVIGERING / MENY === */
+
+.navbar {
+    background-color: #e74c3c; /* Röd bakgrund */
+    height: 15px;              /* Exakt höjd på det röda fältet */
+    display: flex;
+    align-items: center;
+    justify-content: center;   /* Centrerar innehållet horisontellt */
+  }
+  
+  /* Behållare för logga och meny */
+  .nav-content {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  /* Logga till vänster, meny i mitten */
+    padding: 0 20px;
+    box-sizing: border-box;
+    position: relative;
+  }
+  
+  /* Logotypen */
+  .logo-container {
+    position: absolute;
+    left: 20px;              /* Vänsterhörnet */
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .logo {
+    height: 80px;            /* Gör loggan lite större än fältet */
+    background-color: white;
+    padding: 4px;
+    border-radius: 6px;
+  }
+  
+  /* Menyn */
+  .menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    flex: 1;
+  }
+  
+  .menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+  }  
+
+  /* === INTRODUKTIONSTEXT UNDER MENY === */
+.intro-section {
+    text-align: center;        /* Centrerar hela sektionen */
+    margin-top: 2em;           /* Avstånd uppåt från menyfältet */
+    margin-bottom: 1em;        /* Lite luft ner till nästa innehåll */
+}
+
+.intro-section h1 {
+    font-size: 1.5em;          /* Mindre än huvudrubriken */
+    font-weight: normal;       /* Vanlig vikt istället för fetstil */
+    color: #ffffff;            /* Vit text för bra kontrast */
+    margin: 0 auto;            /* Centrerar texten */
+    max-width: 80%;            /* Begränsar bredden något */
+    line-height: 1.4;          /* Mjukare radavstånd */
+}
+
+  
+  
+/* 1. Grundinställningar för hela sidan */
+body {
+    background-color: #121212; /* Mörk bakgrund för att skydda ögonen */
+    color: #e0e0e0; /* Ljusgrå text som är lättare än vit men fortfarande tydlig */
+    font-family: Arial, sans-serif; /* Sans-serif ger en modern och lättläst text */
+    margin: 0; /* Tar bort standardmarginaler från webbläsaren */
+    padding: 0; /* Tar bort standardutfyllnad */
+    line-height: 1.6; /* Lite extra radavstånd för läsbarhet */
+  }
+  
+  header {
+    text-align: center;
+  }
+  
+  header h1 {
+    margin-bottom: 0;
+  }
+  
+  header p {
+    margin-top: 0;
+    font-size: 1.1em;
+    color: #dddddd;
+  }
+  
+  /* 2. Rubriker (h1, h2 osv.) */
+  h1, h2, h3 {
+    color: #ffffff; /* Rena vita rubriker för tydlig kontrast */
+    margin-bottom: 0.5em;
+  }
+  
+  /* 3. Länkar */
+  a {
+    color: #9c27b0; /* Lila färg för att sticka ut mot mörk bakgrund */
+    text-decoration: none; /* Tar bort understrykning för ett renare utseende */
+  }
+  
+  a:hover {
+    text-decoration: underline; /* Understrykning när man hovrar för tydlig interaktion */
+  }
+  
+  /* 4. Navigationsmeny */
+  nav {
+    background-color: #d8473d; /* Röd menybakgrund inspirerad av din skiss */
+    padding: 1em 0; /* Vertikal utfyllnad för luft mellan element */
+  }
+  
+  nav ul {
+    display: flex; /* Gör listan horisontell */
+    justify-content: center; /* Centrera menyinnehåll */
+    gap: 2em; /* Avstånd mellan varje menyval */
+    list-style: none; /* Tar bort punkter */
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav a {
+    color: white; /* Vit text i menyn */
+    font-weight: bold; /* Fetstil för tydlighet */
+    transition: color 0.3s ease; /* Mjuk övergång vid hovring */
+  }
+  
+  nav a:hover {
+    color: #eeeeee; /* Lite ljusare grå vid hovring */
+  }
+  
