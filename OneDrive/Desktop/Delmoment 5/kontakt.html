@@ -14,13 +14,20 @@
 <body>
 
     <!-- Navigeringsmeny -->
-    <nav>
-        <ul>
-            <li><a href="index.html">Startsida</a></li>
-            <li><a href="om-kursen.html">Om kursen</a></li>
-            <li><a href="kursinnehall.html">Kursinnehåll</a></li>
-        </ul>
-    </nav>
+    <nav class="navbar">
+        <div class="nav-content">
+          <div class="logo-container">
+            <img src="w-logo.png" alt="Logotyp" class="logo">
+          </div>
+          <ul class="menu">
+            <li><a href="index.html"><span class="circle">🏠</span> Start</a></li>
+            <li><a href="om-kursen.html"><span class="circle">📘</span> Om kursen</a></li>
+            <li><a href="kursinnehall.html"><span class="circle">📚</span> Kursinnehåll</a></li>
+            <li><a href="kontakt.html" style="font-weight: bold;"><span class="circle">✉️</span> Kontakt</a></li>
+          </ul>
+        </div>
+      </nav>
+      
 
     <!-- Rubrik för kontaktsidan -->
     <h1>Kontakt</h1>
@@ -28,7 +35,7 @@
     <!-- Formulärsektion -->
     <section>
         <h2>Kontakta mig</h2>
-        
+
         <!-- Formulär för att skicka ett meddelande.
      action="#" betyder att formuläret inte skickas till någon server.
      method="post" används för att skicka informationen dolt i bakgrunden. -->

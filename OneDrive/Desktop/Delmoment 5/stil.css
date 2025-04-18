@@ -52,11 +52,25 @@
   }
   
   .menu li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .circle {
+    display: inline-block;
+    background-color: white;
+    color: #e74c3c;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
     font-weight: bold;
-  }  
+    text-align: center;
+    line-height: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9em;
+  }
 
   /* === INTRODUKTIONSTEXT UNDER MENY === */
 .intro-section {
@@ -91,7 +105,13 @@ body {
   }
   
   header h1 {
-    margin-bottom: 0;
+    font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  font-style: italic;
+  font-size: 3.2rem;
+  letter-spacing: 1px;
+  text-transform: none;
+  margin-top: 0.5em;
   }
   
   header p {
@@ -104,6 +124,8 @@ body {
   h1, h2, h3 {
     color: #ffffff; /* Rena vita rubriker för tydlig kontrast */
     margin-bottom: 0.5em;
+    font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
   }
   
   /* 3. Länkar */
@@ -154,6 +176,11 @@ body {
   .chat-box {
     background-color: white; /* Vit bakgrund */
     color: black;            /* Svart text */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+    text-align: center; /* CENTRERAR brödtexten */
+    margin: 0;
     border: 3px solid #e74c3c; /* Röd kant */
     border-radius: 15px;
     padding: 20px;
@@ -178,14 +205,19 @@ body {
   
   /* Rubriker i bubblorna */
   .chat-box h2,
-  .chat-box h3,
-  .chat-box h4 {
-    font-size: 1.5em;
-    text-decoration: underline;
-    color: #e74c3c; /* Samma röd färg som kant/meny */
-    margin-top: 0;
-    margin-bottom: 10px;
-  }
+.chat-box h3,
+.chat-box h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 1.2em;
+  text-decoration: underline;
+  color: #e74c3c; /* Samma röd färg som kant/meny */
+  margin-top: 0;
+  margin-bottom: 0;
+  letter-spacing: 0.3px;
+  text-align: center; /* CENTRERAR rubriken */
+}
+
   
   footer {
     text-align: center;
