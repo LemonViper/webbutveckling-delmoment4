@@ -112,9 +112,10 @@ body {
     text-decoration: none; /* Tar bort understrykning för ett renare utseende */
   }
   
-  a:hover {
-    text-decoration: underline; /* Understrykning när man hovrar för tydlig interaktion */
-  }
+  nav a:hover {
+    color: #eeeeee;              /* Ljussgrå text vid hovring */
+    text-decoration: underline; /* Understrykning vid hovring */
+}
   
   /* 4. Navigationsmeny */
   nav {
@@ -140,4 +141,56 @@ body {
   nav a:hover {
     color: #eeeeee; /* Lite ljusare grå vid hovring */
   }
+
+  /* === Chat-bubblor längst ner === */
+.chat-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 60px;
+    margin-bottom: 80px;
+  }
+  
+  .chat-box {
+    background-color: white; /* Vit bakgrund */
+    color: black;            /* Svart text */
+    border: 3px solid #e74c3c; /* Röd kant */
+    border-radius: 15px;
+    padding: 20px;
+    width: 225px;
+    min-height: 150px;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Triangel för "chatbubblan" */
+  .chat-box::after {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%); /* Justera så mitten verkligen är mitten */
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-top-color: #e74c3c; /* Samma färg som menyn */
+  }
+  
+  /* Rubriker i bubblorna */
+  .chat-box h2,
+  .chat-box h3,
+  .chat-box h4 {
+    font-size: 1.5em;
+    text-decoration: underline;
+    color: #e74c3c; /* Samma röd färg som kant/meny */
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #cccccc;
+  }
+  
   

@@ -1,0 +1,53 @@
+1. Vilka två färgkombinationer är problematiska att läsa för de som har färgblindhet eller dyslexi? 
+
+    Svar:   
+        Det finns två färgkombinationer som är särkilt svårt att läsa för personer 
+        med färgblindhet eller dyselxi;
+            - Röd text på grön bakgrund
+            - Gul text på vit bakgrund
+        För personer med dyselxi är det också extra viktigt med tydliga kontraster. 
+        Färgkombinationer som gul på vit, eller ljusblå på ljusbakgrund ger för låg kontrast - 
+        vilket gör texten svår att fokusera på och svår att läsa av. 
+        Det kan också skapa visuell stress och försvåra läsförståelsen. 
+
+2. Vad betyder följande: phising, whitelist och blacklist?
+
+    Svar:
+        Phising(nätfiske), är en bedrägerimetod där någon försöker lura dig att:
+            - ge ut lösenord, bankuppgifter eller annan känslig information
+            (förfalskade hemsidor, ogiltiga länkar m.m)
+            - ladda ner skadliga filer
+        Man kallar det "nätfiske" eftersom att bedragaren "fiskar" efter känslig information.
+
+        Whitelistkan förklaras som en lista med godkända saker som till exempel:
+            - Epostadresser
+            - Domäner
+            - IP-adresser
+            - Program
+        Allt som inte finns med på "vitalistan" blockeras per automatik. 
+
+        Blacklist är egentligen motsatsen till en whitelist, det är en lista på 
+        sådant som är förbjudet, till exempel:
+            - spam sändare
+            - skadliga hemsidor
+            - virus program
+        Allt är tillåter förutom det som står på listan.
+
+3. Vad är GDPR och varför finns GDPR?
+
+    Svar:
+        GDPR(General Data Protection Regulation) är en dataskyddsordning som reglerar¨
+        hur personuppgifter får samlas in, lagras och användas. Lagen ersatte den tidigare svenska
+        personuppgiftslagen(PUL) och gäller i hela EU.
+        Syftet med GDPR är att skydda individens personliga integritet och ge människor kontroll
+        över sina egna uppgifter - till exempel namn, e-post, IP-adresser och bilder.
+
+        För den som arbetar med webbsidor innebär GDPR att man måste:
+            - vara tydlig med vilken data som insamlas
+            - ha samtycke från användaren om data ska sparas
+            - erbjuda möjlighet att ta bort eller få ut sin data
+        Exempel: om man har ett kontaktfomulär som hämtar in epostadresser, måste man informera
+        om detta och varför uppgifterna sparas.
+
+    Källa:
+    Integritetsskyddsmyndigheten (IMY), www.imy.se
